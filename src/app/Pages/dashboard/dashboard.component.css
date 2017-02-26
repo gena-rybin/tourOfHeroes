@@ -1,0 +1,12 @@
+.module {
+    display: inline-block;
+    padding: 20px;
+    background-color: #607D8B;
+    margin-left: 10px;
+    color: #EEE;
+}
+.module:hover {
+    background-color: #EEE;
+    color: #607D8B;
+    cursor: pointer;
+}

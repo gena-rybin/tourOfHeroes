@@ -1,0 +1,23 @@
+<h1>
+    {{title}}
+</h1>
+<h3>
+  about page
+</h3>
+<h2>
+    this app was created for testing Angular 2
+</h2>
+
+<div><label>name is: </label>{{name}}</div>
+<div>
+    <label>one way: </label>
+    <input value="{{name}}" placeholder="name">
+</div>
+<div>
+    <label>two way: </label>
+    <input [(ngModel)]="name" placeholder="name">
+</div>
+
+<button (click)='showMe($event)'>click</button>
+
+<p>----------------</p>

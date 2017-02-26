@@ -1,0 +1,8 @@
+<ul class='enemyClass'>
+    <li *ngFor='let enemy of enemies; let i=index'
+        [class.selected]="enemy === selectedEnemy"
+        (click)="selectedE(enemy)">
+        <span>{{enemy.id}}</span> {{enemy.name}}
+        <a class="delete" (click)="delete(i)"> x </a>
+    </li>
+</ul>

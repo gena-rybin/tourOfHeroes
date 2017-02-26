@@ -1,0 +1,8 @@
+.module {
+    display: inline-block;
+    padding: 5px;
+}
+.module:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}

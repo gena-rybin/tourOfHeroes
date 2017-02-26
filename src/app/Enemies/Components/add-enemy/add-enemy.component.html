@@ -1,0 +1,16 @@
+<div>
+    <p>
+        <span>id: </span>
+        <input #enemyId type="number" class="form-control  input-sm" />,
+        <span>name: </span>
+        <input #enemyName class="form-control  input-sm" />
+        <span> is an enemy for next Hero: </span>
+        <select #heroName >
+            <option *ngFor="let hero of heroes">{{hero.id}}, {{hero.name}}</option>
+        </select>
+        <button
+                (click)="add(enemyId.value, enemyName.value, heroName.value)"
+                class="btn btn-primary" type="submit">add enemy
+        </button>
+    </p>
+</div>

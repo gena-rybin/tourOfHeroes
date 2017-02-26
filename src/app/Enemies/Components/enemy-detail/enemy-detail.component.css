@@ -1,0 +1,29 @@
+h1 {
+    background-color: black;
+    margin: 0 auto;
+    color: orange;
+}
+.enemyClass {
+    background-color: cadetblue;
+    color: white;
+    width: 30%;
+}
+.enemyClass :hover,
+.selected{
+    background-color: orange;
+    color: black;
+}
+
+a.delete {
+    float:right;
+    margin-right: 5px;
+    background-color: gray !important;
+    color:white;
+    width: 10%;
+    /*padding: 0px 4px;*/
+    cursor: pointer;
+    text-align: center;
+}
+a.delete:hover {
+    color: red;
+}

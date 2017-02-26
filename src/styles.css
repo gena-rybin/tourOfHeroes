@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding: 2em;
+}
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+input {
+    display: inline !important;
+}
+star-rating-comp {
+    display: inline-block !important;
+}

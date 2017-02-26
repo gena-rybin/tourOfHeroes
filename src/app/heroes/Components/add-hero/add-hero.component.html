@@ -1,0 +1,25 @@
+<div>
+    <p>
+        <label class="bold">id: </label>
+        <input #heroId type="number" class="form-control input-sm" required/>,
+        <label class="bold">name: </label>
+        <input #heroName class="form-control input-sm"  required/>,
+        <!--<input  class="form-control input-sm" #heroName="ngModel" required/>,-->
+    <!--<div [hidden]="heroName.valid || heroName.untouched" class="alert alert-danger">-->
+        <!--Не указано имя-->
+    <!--</div>-->
+
+    <label class="bold">rate: </label>
+        <select #heroRate >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <button
+                (click)="add(heroId.value, heroName.value, heroRate.value)"
+                class="btn btn-primary" type="submit">add hero
+        </button>
+    </p>
+</div>

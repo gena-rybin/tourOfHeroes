@@ -1,0 +1,16 @@
+
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="" routerLinkActive="activeRoute" [routerLinkActiveOptions]="{exact:true}">
+        dashboard
+    </a>
+    <a routerLink="/heroes" routerLinkActive="activeRoute">heroes</a>
+    <a routerLink="/enemies" routerLinkActive="activeRoute">enemies</a>
+    <a routerLink="/navigate" routerLinkActive="activeRoute">NAVIGATE</a>
+    <a routerLink="/additional" routerLinkActive="activeRoute">additional</a>
+    <a routerLink="/about" routerLinkActive="activeRoute">about</a>
+</nav>
+<p>=======================</p>
+
+<router-outlet></router-outlet>
+<!--<heroes-list></heroes-list>-->

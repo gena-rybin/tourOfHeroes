@@ -1,0 +1,19 @@
+<p>
+    rating
+    <input type="number" [(ngModel)]="rating">
+    {{rating}}
+    <i class='fa fa-star'></i>
+</p>
+
+<div class='average-rating-container'>
+    <ul class='rating background readonly'>
+            <li *ngFor='let star of stars' class='star'>
+                <i class='fa fa-star'></i>      <!--&#9733-->
+            </li>
+    </ul>
+    <ul class='rating foreground readonly' [ngStyle]="{width:filledInStarsContainerWidth+'%'}" >
+        <li *ngFor='let star of stars' class='star filled'>
+            <i class='fa fa-star'></i>       <!--&#9733-->
+        </li>
+    </ul>
+</div>

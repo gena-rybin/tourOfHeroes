@@ -1,0 +1,33 @@
+h1 {
+    background-color: black;
+    margin: 0 auto;
+    color: orange;
+}
+.heroes {
+    background-color: orange;
+    color: black;
+    width: 30%;
+}
+.heroes :hover {
+    background-color: burlywood;
+}
+.selected {
+    background-color: black;
+    color: orange;
+}
+
+a.delete {
+    float:right;
+    margin-right: 5px;
+    background-color: gray ;
+    color:white;
+    width: 10%;
+    /*padding: 0px 4px;*/
+    cursor: pointer;
+    text-align: center;
+}
+a.delete:hover {
+    color: red;
+    background-color: transparent ;
+}
+li {list-style-type: none;}

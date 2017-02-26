@@ -1,0 +1,23 @@
+<h3>Heroes:</h3>
+<add-hero></add-hero>
+<div>
+    <button (click)="sort()">{{caption}}</button>
+    <a *ngFor="let hero of heroes"  [routerLink]="['/heroes', hero.id]"  class="col-1-4">
+        <div class="module hero thumbnail">
+            {{hero.name | increase | upper3Letter }}
+        </div>
+    </a>
+</div>
+<p>=======================</p>
+<h3>Enemies:</h3>
+<add-enemy></add-enemy>
+<div>
+    <a *ngFor="let enemy of enemies" [routerLink]="['/enemies']">
+        <div class="module hero thumbnail">
+            {{enemy.name}}
+        </div>
+    </a>
+</div>
+<p>=======================</p>
+<star-rating-ang [rating]="4.5" [readonly]="'false'" ></star-rating-ang>
+

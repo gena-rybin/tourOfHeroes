@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+.activeRoute {
+    padding: 4px;
+    border: 1px solid dodgerblue;
+    border-radius: 2px;
+}
