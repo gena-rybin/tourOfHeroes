@@ -112,8 +112,8 @@ export class RateAngComponent implements OnInit {
 //         return {
 //             restrict : "EA",
 //             template : "<ul class='rating' ng-class='{readonly: readonly}'>" +
-//             "  <li ng-repeat='star in stars' ng-class='star' ng-click='toggle($index)'>" +
-//             "    <i class='fa fa-star'></i>" + //&#9733
+//             "  <li ng-repeat='star-s in stars' ng-class='star-s' ng-click='toggle($index)'>" +
+//             "    <i class='fa fa-star-s'></i>" + //&#9733
 //             "  </li>" +
 //             "</ul>",
 //             scope : {

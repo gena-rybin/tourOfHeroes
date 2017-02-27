@@ -4,18 +4,18 @@
     display: inline-block;
 li {
     padding: 1px;
-    color: #ddd;
+    color: #ffffff;
     font-size: 20px;
-    text-shadow: .05em .05em #aaa;
+  text-shadow: .05em .05em #ffffff;
     list-style-type: none;
     display: inline-block;
     cursor: pointer;
 &.filled {
-     color: #fd0; //#21568b
+     color: #2d9eac; //#21568b
  }
 }
 &.readonly li.filled {
-     color: #666;
+     color: #2d9eac;
  }
 }
 
@@ -24,7 +24,6 @@ li {
     height: 31px;
     width: 103px;
     //overflow: hidden;
-  border: 1px solid red;
 .background,
 .foreground {
     position: absolute;
@@ -33,4 +32,12 @@ li {
     overflow: hidden;
     white-space: nowrap;
 }
+}
+.star i {
+  top: 1px;
+  display: inline-block;
+}
+.fa-star {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2d9eac;
 }

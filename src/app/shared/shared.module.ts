@@ -8,19 +8,20 @@ import {RedBorderDirective} from "./directives/red-border.directive";
 
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
-import {StarRatingModule} from "./Components/star-rating/star-rating.module";
 
 import {MaterialModule} from "@angular/material";
 import 'hammerjs';
 import {ModalModule} from "./Components/ng2-modal/index";
 import {RateAngComponent} from "./Components/rate-ang1/rate-ang1.component";
+import {StarRatingModule} from "./Components/star-rating/src/star-rating.module";
+import {StarRatingSSComponent} from "./Components/star-s/star-s.component";
 
 @NgModule({
   imports: [
         CommonModule,
       BrowserModule,
       FormsModule,
-      StarRatingModule,     // star rating    https://www.npmjs.com/package/angular-star-rating
+      StarRatingModule,     // star-s rating    https://www.npmjs.com/package/angular-star-rating
       MaterialModule,
       ModalModule,           // https://www.npmjs.com/package/@strictd/ng2-modal
   ],
@@ -30,7 +31,8 @@ import {RateAngComponent} from "./Components/rate-ang1/rate-ang1.component";
         HttpHeroComponent,
         HttpApiComponent,
         RedBorderDirective,
-        RateAngComponent
+        RateAngComponent,
+        StarRatingSSComponent  // krivoruchko
     ],
     exports: [
         Upper3LetterPipe,
@@ -38,9 +40,10 @@ import {RateAngComponent} from "./Components/rate-ang1/rate-ang1.component";
         HttpHeroComponent,
         HttpApiComponent,
         RedBorderDirective,
-        StarRatingModule,     // star rating
+        StarRatingModule,     // star-s rating
         ModalModule,           // https://www.npmjs.com/package/@strictd/ng2-modal
-        RateAngComponent
+        RateAngComponent,
+        StarRatingSSComponent  // krivoruchko
     ],
     entryComponents: [
             ],

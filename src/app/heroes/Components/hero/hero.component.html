@@ -8,7 +8,7 @@
         (click)="selectedH(h, i)">
             <span class="badge">{{h.id}}</span>
             {{h.name | uppercase}}
-            <star-rating-comp  [rating]=h.rate [showHalfStars]='true' [readOnly]='true' [size]="'medium'"></star-rating-comp>
+            <star-rating-comp  [rating]=h.rate  [showHalfStars]='true' [readOnly]='true' [size]="'medium'"></star-rating-comp>
             <div (click)="DefineHeroToDelete(h); $event.stopPropagation()">
                 <!--/////////modal start//////////////////////-->
                 <div class="row" >

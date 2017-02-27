@@ -3,7 +3,7 @@ import {Component, Input} from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import {HeroClass} from "../../../CONST/heroClass";
 import {HeroService} from "../../Services/hero.service";
-import { IStarRatingOnClickEvent } from "../../../shared/Components/star-rating/star-rating-struct";
+import { IStarRatingOnClickEvent } from "../../../shared/Components/star-rating/star-s-rating-struct";
 
 @Component({
     moduleId: module.id,
